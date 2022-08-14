@@ -26,7 +26,7 @@ public class CustomerController {
     }
 
 	@PostMapping("/customers")
-	public Customer saveCustomerDetails (@RequestBody Customer customer) {
+	public Response <Customer> saveCustomerDetails (@RequestBody Customer customer) {
 		
         return customerService.saveCustomer(customer);
 		
