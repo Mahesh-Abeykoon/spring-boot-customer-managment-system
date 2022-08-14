@@ -38,8 +38,8 @@ public class Customer {
 	
 	private String name;
 	
-	@Value("${some.key:true}")
-    private boolean married;
+	@Value("${some.key:true,false}")
+    private boolean isMarried;
 	
     private String contactNumber;
 
